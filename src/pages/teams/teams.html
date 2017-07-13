@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Teams</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <h3 padding>Hello there</h3>
+    <div padding>
+        You navigated here
+    </div>
+
+    <button ion-item *ngFor='let team of teams' (click)="itemTapped($event, team)">
+        {{team.name}}
+    </button>
+
+</ion-content>
