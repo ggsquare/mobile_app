@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-import { TeamsPage } from '../teams/teams';
+import { TeamsPage, TournamentsPage } from '../pages';
 
 @Component({
   selector: 'page-home',
@@ -15,6 +15,10 @@ export class HomePage {
 
   toTeams(){
     this.nav.push(TeamsPage);
+  }
+
+  goToTournaments(){
+    this.nav.push(TournamentsPage);
   }
 
 }
