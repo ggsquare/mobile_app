@@ -13,10 +13,6 @@ export class HomePage {
 
   }
 
-  toTeams(){
-    this.nav.push(TeamsPage);
-  }
-
   goToTournaments(){
     this.nav.push(TournamentsPage);
   }

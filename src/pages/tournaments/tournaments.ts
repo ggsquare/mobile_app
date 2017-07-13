@@ -24,9 +24,8 @@ export class TournamentsPage {
     }
 
 
-    ionViewLoaded(){
+    ionViewDidLoad(){
         this.myService.getTourneys().then(data => this.tournaments = data);
-        console.log("ionViewLoaded");
     }
 
 }

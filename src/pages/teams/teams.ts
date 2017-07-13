@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
 import { TeamHomePage } from '../pages';
 
@@ -9,8 +9,10 @@ import { TeamHomePage } from '../pages';
 })
 
 export class TeamsPage {
-    constructor(private nav: NavController){
+    tournaments: any;
 
+    constructor(private nav: NavController, private navParams: NavParams){
+        this.tournaments = this.navParams.data;
     }
 
     teams = [
